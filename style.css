@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+svg {
+  background-color: #34495e;
+  border-radius: 6px;
+}
+
+.ball-1 {
+  transform-origin: 30% 25%;
+
+  animation: rotateBall1 0.8s ease-out infinite alternate;
+}
+
+.ball-5 {
+  transform-origin: 70% 25%;
+
+  animation: rotateBall5 0.8s ease-out 0.8s infinite alternate;
+}
+
+@keyframes rotateBall1 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes rotateBall5 {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-30deg);
+  }
+}
